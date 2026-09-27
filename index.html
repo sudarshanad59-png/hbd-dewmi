@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Dewmi! 🎉</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Dewmi! 🎉</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
-    <div class="background"></div>
-    <div class="heart-container"></div>
+  <div class="stars"></div>
+  <div class="container">
+    <div class="card">
+      <div class="badge">HAPPY BIRTHDAY</div>
+      <h1 class="name">Dewmi ✨</h1>
+      
+      <div class="cake-box">
+        <span class="cake">🎂</span>
+      </div>
 
-    <div class="main-container">
-        <h1 class="glow-text">Happy Birthday, Dewmi!</h1>
-        <div class="photo-frame">
-            <span class="birthday-icon">✨ 🎂 ✨</span>
-        </div>
-        <p class="wish-message">
-            Wishing you a year filled with love, laughter, and endless possibilities. 
-            May every dream you chase turn into beautiful reality.
-        </p>
-        <div class="gift-box" onclick="showSurprise()">
-            <span class="gift-icon">🎁</span>
-            <span class="tap-text">Tap for a surprise!</span>
-        </div>
-        <div id="surprise" class="hidden">
-            <p class="final-wish">You are truly amazing! 💖</p>
-            <p class="signature">— With love, Dinesh</p>
-        </div>
+      <p class="wish">
+        Wishing you a magnificent birthday filled with joy, love, and laughter! 
+        May this new chapter of your life bring you endless happiness and success. 🌸✨
+      </p>
+
+      <button id="surpriseBtn" onclick="triggerSurprise()">Open Your Surprise 🎁</button>
+
+      <div id="hiddenMessage" class="hidden-msg">
+        <p class="special-text">You are an extraordinary best friend! 💖</p>
+        <p class="from">— With lots of love, <span class="dinesh">Dinesh</span></p>
+      </div>
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
