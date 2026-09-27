@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Happy Birthday Dewmi!</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Sacramento&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Dewmi! 🎉</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="stars"></div>
-  <div class="twinkling"></div>
+    <div class="background"></div>
+    <div class="heart-container"></div>
 
-  <div class="card">
-    <h1 class="title">Happy Birthday, Dewmi! 🎉</h1>
-    <div class="cake-icon">🎂</div>
-    
-    <button id="wishBtn" onclick="revealWish()">Click For Your Wish ✨</button>
-    
-    <div id="wishText" class="wish-container hidden">
-      <p class="message">
-        Wishing you a day filled with happiness and a year filled with joy. 
-        May all your dreams come true! Thank you for being such an amazing best friend. 🌸✨
-      </p>
-      <p class="signature">— Best Wishes from <span>Dinesh</span></p>
+    <div class="main-container">
+        <h1 class="glow-text">Happy Birthday, Dewmi!</h1>
+        <div class="photo-frame">
+            <span class="birthday-icon">✨ 🎂 ✨</span>
+        </div>
+        <p class="wish-message">
+            Wishing you a year filled with love, laughter, and endless possibilities. 
+            May every dream you chase turn into beautiful reality.
+        </p>
+        <div class="gift-box" onclick="showSurprise()">
+            <span class="gift-icon">🎁</span>
+            <span class="tap-text">Tap for a surprise!</span>
+        </div>
+        <div id="surprise" class="hidden">
+            <p class="final-wish">You are truly amazing! 💖</p>
+            <p class="signature">— With love, Dinesh</p>
+        </div>
     </div>
-  </div>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
