@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  color: #fff;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.title {
+  font-family: 'Sacramento', cursive;
+  font-size: 2.8rem;
+  color: #ffdde1;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(255, 221, 225, 0.5);
+}
+
+.cake-icon {
+  font-size: 3.5rem;
+  margin: 15px 0;
+  animation: bounce 2s infinite;
+}
+
+button {
+  background: linear-gradient(45deg, #ff758c, #ff7eb3);
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 118, 140, 0.4);
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 118, 140, 0.6);
+}
+
+.wish-container {
+  margin-top: 20px;
+  opacity: 1;
+  transition: opacity 0.8s ease-in;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.message {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+.signature {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.signature span {
+  color: #ff7eb3;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-15px);}
+  60% {transform: translateY(-7px);}
+}
